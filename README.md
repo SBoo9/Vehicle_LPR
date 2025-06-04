@@ -32,3 +32,60 @@ This project is an end-to-end real-time License Plate Recognition (LPR) system t
 │   └── lambda_handler.py        # AWS Lambda entrypoint (optional)
 ├── requirements.txt
 └── README.md
+```
+
+
+## ⚙️ Technologies Used
+
+Module	Tool/Library
+Detection	YOLOv5 (fine-tuned)
+OCR	EasyOCR
+Backend	Python, OpenCV, Flask / FastAPI
+Deployment	AWS Lambda, S3, SageMaker
+Packaging	Docker, Git, CI/CD (optional)
+
+---
+
+## 🚀 Getting Started
+🔧 Installation
+```
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/vehicle-lpr.git
+cd vehicle-lpr
+pip install -r requirements.txt
+```
+---
+
+## ▶️ Running Locally
+```bash
+Copy
+Edit
+python app/app.py
+```
+This will run the Flask app where you can upload video files and get annotated results with extracted license plates.
+
+---
+## ☁️ AWS Deployment (Optional)
+Package lambda_handler.py and dependencies using zip or Docker.
+
+Upload to AWS Lambda with proper role permissions.
+
+Configure S3 triggers for video ingestion and result storage.
+
+## 📊 Performance
+Metric	Result (Approx.)
+Detection Accuracy	~92%
+OCR Accuracy	~89%
+Avg. Processing Time	~2 sec/frame
+
+🧠 Future Work
+Support for real-time live video feeds (e.g. RTSP, webcam)
+
+Integration with vehicle registration databases
+
+Multilingual and blurred plate correction
+
+Frontend dashboard with Streamlit
+
